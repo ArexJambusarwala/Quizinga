@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="reset.css" >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+td
+{
+	height:80px;
+	width:80px;
+	font-size: 45pt;
+	text-align: center;
+}
+body{
+	width:550px;
+	margin:auto;
+	background-color:#DBB1CD;
+}
+h1
+{
+	color:  white;
+	border-bottom:2px solid pink;
+	border-left:10px;
+	font-family: 'Raleway', sans-serif;
+	text-align:center;
+}
+#gameon{
+	color: white;
+	border-bottom:2px solid pink;
+	border-left:10px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+#resetbtn {
+
+		border-radius: 8px;
+		padding: 8px 16px;
+		background-color: #008CBA;
+		border=grey;
+		font-size : 14px;
+		width: 30%;
+		height: 60px;
+
+}
+
+#btntext {
+		color: white;
+		text-align: center;
+
+}
+#message
+{
+	color: white;
+	font-size:25px;
+}
+</style>
+</head>
+<body onload="startGame();"  background="https://images.cdn3.stockunlimited.net/preview1300/tic-tac-toe-pattern-background_1242337.jpg">
+    
+    <div id="navi" class="container-fluid">
+        <nav class="navbar navbar-default " data-spy="affix" data-offset-top="115" >
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#mainNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" ><b><span class="glyphicon glyphicon-home"></span></b> </a>
+
+                </div>
+
+                 <div class="collapse navbar-collapse" id="mainNavBar">
+                    <ul class="nav navbar-nav" >
+                        <li><a href="javascript:void(0)">Home</a> </li>
+                        <li><a href="../index.html" target="_self" >Quiz</a> </li>
+                        <li><a href="tictactoe.html" target="_self">Tic-Tae-Toe</a> </li>
+                        <li><a href="../About-us.html" target="_self">About us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://github.com/mann27/Quizinga" target="_blank">Contribute</a> </li>
+                        <li><a href="#" >Login</a> </li>
+                        <li><a href="#" >Signup</a> </li>
+                    </ul>
+                 </div>
+            </div>
+        </nav>
+    </div>
+    
+    
+    
+<h1 id="gameoff" >Play Tic-Tae-Toe </h1>
+<h1 id="gameon" > The game is on. . . </h1>
+<br/>
+<div id="message">Messages here</div>
+<table border="3" bgcolor="pink" >
+<tr>
+<td id="s1" onClick="nextMove(this)"></td>
+<td id="s2" onClick="nextMove(this)"></td>
+<td id="s3" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td id="s4" onClick="nextMove(this)"></td>
+<td id="s5" onClick="nextMove(this)"></td>
+<td id="s6" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td id="s7" onClick="nextMove(this)"></td>
+<td id="s8" onClick="nextMove(this)"></td>
+<td id="s9" onClick="nextMove(this)"></td>
+</tr>
+</table>
+<br><br>
+<form action="javascript: startGame();">
+<button  id="resetbtn" name="reset" onclick="textChange();" ><p id="btntext">RESET THE GAME</p></button>
+</form>
+<script src="sc.js"></script>
+</body>
+</html>
