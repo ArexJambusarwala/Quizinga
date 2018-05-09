@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="en">
 <head>
   <title>
     Quizinga
@@ -14,7 +16,7 @@
     
     
     <div id="navi">
-        <nav class="navbar navbar-default " data-spy="affix" data-offset-top="115" >
+        <nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="115" >
             <div class="container-fluid">
                 <div class="navbar-header ">
                     <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#mainNavBar">
@@ -29,14 +31,14 @@
                  <div class="collapse navbar-collapse" id="mainNavBar">
                     <ul class="nav navbar-nav" >
                         <li><a href="javascript:void(0)">Home</a> </li>
-                        <li><a href="#" class="active">Quiz</a> </li>
+                        <li  class="active"><a href="#">Quiz</a> </li>
                         <li><a href="tic-toe/tictactoe.html" target="_blank">Tic-Tae-Toe</a> </li>
                         <li><a href="About-us.html" target="_blank">About us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="https://github.com/mann27/Quizinga" target="_blank">Contribute</a> </li>
-                        <li><a href="#" >Login</a> </li>
-                        <li><a href="#" >Signup</a> </li>
+                        <li><a href="#" ><span class="glyphicon glyphicon-log-in"></span> Login</a> </li>
+                        <li><a href="#" ><span class="glyphicon glyphicon-user"></span> Signup</a> </li>
                     </ul>
                  </div>
             </div>
@@ -46,7 +48,7 @@
     
     <div id="floating-text" class="container">
         <marquee id="mars"> <h4>Try your best to win the Quizinga</h4></marquee>
-    </div>
+    </div><br>
         
         
     <div id="question-box" class="container" >
@@ -55,24 +57,23 @@
         <div id="que-number">
             <div class="row">
                 <div class="col-md-2" id="qn">
-                    <h4><b>Question 1:</b></h4>
+                    <h3><b>Question 1:</b></h3>
                 </div>
-                <div class="col-md-1">
-                    <h2 id="qnum"><b>1</b></h3>
+                <div class="col-md-10">
+                    <h3 id="question"><b style="color:red;">What is the?</b></h3>
                 </div>    
             </div>
         </div>
-        
-        <div id="que-content" class="container" >
-            
-        </div>
-            
-        <div>
-            
-            
-        </div>
-        
-        
+      <br><br><br>
     </div>
+	<div class="container">
+		<button type="button" class="btn-lg" id="option" style="margin-left:90px;">Option 1</button>
+		<button type="button" class="btn-lg" id="option" style="margin-left:150px;">Option 2</button>
+	</div><br><br>
+	<div class="container">
+		<button type="button" class="btn-lg" id="option" style="margin-left:90px;">Option 3</button>
+		<button type="button" class="btn-lg" id="option" style="margin-left:150px;">Option 4</button>
+	</div>
 
 </body>
+</html>

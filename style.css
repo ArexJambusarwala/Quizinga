@@ -1,12 +1,16 @@
 #que-number {
-    background: #90C3D4;
+    background:radial-gradient(white,grey);
     backface-visibility:hidden;
-    
+    border-radius:50px;
+	border-width:5px;
+	border-style:solid;
+	border-color:black;
 }
 
 #qn{
     
     text-align: right;
+	margin-bottom:5px; 
 }
 
 #mar {
@@ -20,4 +24,15 @@
     border-bottom-right-radius: 120px;
     border-bottom-left-radius: 120px;
    background-color: beige;
+}
+
+#question
+{
+	padding-top:0px;
+}
+
+#option
+{
+	width:400px;
+	border-radius:40px;
 }
