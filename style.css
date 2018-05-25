@@ -1,3 +1,8 @@
+body
+{
+	background:radial-gradient(#6F73D3,#1A1C52);
+}
+
 #que-number {
     background:radial-gradient(white,grey);
     backface-visibility:hidden;
@@ -31,8 +36,52 @@
 	padding-top:0px;
 }
 
-#option
+#option1
+{
+	width:400px;
+	margin-left:90px;
+	border-radius:40px;
+	border-style:dashed;
+	border-width:2px;
+	border-color:black;
+}
+
+#option2
 {
 	width:400px;
 	border-radius:40px;
+	margin-left:150px;
+	border-style:dashed;
+	border-width:2px;
+	border-color:black;
+}
+
+#option3
+{
+	width:400px;
+	margin-left:90px;
+	border-radius:40px;
+	border-style:dashed;
+	border-width:2px;
+	border-color:black;
+}
+
+#option4
+{
+	width:400px;
+	margin-left:150px;
+	border-radius:40px;
+	border-style:dashed;
+	border-width:2px;
+	border-color:black;
+}
+
+#pass
+{
+	width:200px;
+}
+
+#submit
+{
+	width:200px;
 }

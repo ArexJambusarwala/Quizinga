@@ -36,7 +36,7 @@
                         <li><a href="About-us.html" target="_blank">About us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://github.com/mann27/Quizinga" target="_blank">Contribute</a> </li>
+                        <li><a href="https://github.com/ArexJambusarwala/Quizinga" target="_blank">Contribute</a> </li>
                         <li><a href="#" ><span class="glyphicon glyphicon-log-in"></span> Login</a> </li>
                         <li><a href="#" ><span class="glyphicon glyphicon-user"></span> Signup</a> </li>
                     </ul>
@@ -67,13 +67,17 @@
       <br><br><br>
     </div>
 	<div class="container">
-		<button type="button" class="btn-lg" id="option" style="margin-left:90px;">Option 1</button>
-		<button type="button" class="btn-lg" id="option" style="margin-left:150px;">Option 2</button>
+		<button type="button" class="btn-lg" id="option1" onclick="back(1)">Option 1</button>
+		<button type="button" class="btn-lg" id="option2" onclick="back(2)">Option 2</button>
 	</div><br><br>
 	<div class="container">
-		<button type="button" class="btn-lg" id="option" style="margin-left:90px;">Option 3</button>
-		<button type="button" class="btn-lg" id="option" style="margin-left:150px;">Option 4</button>
+		<button type="button" class="btn-lg" id="option3" onclick="back(3)">Option 3</button>
+		<button type="button" class="btn-lg" id="option4" onclick="back(4)">Option 4</button>
+	</div><br><br>
+	<div class="container">
+		<center><button type="submit" id="submit" class="btn-lg btn-primary" onclick="checkAnswer();increments()"><b>Submit</b></button></center><br><br>
+		<center><button type="submit" id="pass" class="btn-lg btn-warning" onclick="increments()"><b>Pass</b></button></center>
 	</div>
-
+<script src="func.js"></script>
 </body>
 </html>
